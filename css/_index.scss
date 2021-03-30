@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+    font-family: pristina;
+    src: url(../font/PRISTINA.TTF);
+}
+
+// var
+$primary-color: #ff817e;
+
+html {
+    font-family: roboto, sens-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+.text-pristina {
+    font-family: pristina;
+}
+
+.theme-btn {
+    padding: 10px 25px;
+    background: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.theme-text {
+    color: #ff817e;
+}
+
+/* navbar area  */
+.navbar-area {
+    .top-color {
+        background-color: #c4977b;
+        border-bottom: 1px solid black;
+    }
+    .logo-text {
+        color: #6f5443;
+        border-bottom: 1px solid black;
+        h1 {
+            font-weight: bolder;
+            margin-bottom: 0px;
+        }
+    }
+    ul {
+        border-bottom: 1px solid black;
+        .nav-item {
+            list-style: none;
+            .nav-link {
+                color: black;
+            }
+        }
+    }
+}
+/* home page header */
+#home-page-header {
+    .image-1 {
+        height: 400px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+/* qouter section */
+#qoute-section {
+    .image-1 {
+        img {
+            width: 100px;
+        }
+    }
+    .image-2 {
+        img {
+            width: 150px;
+        }
+    }
+    .name-span {
+        font-size: 40px;
+    }
+}
+
+/* ssl path container */
+#ssg-path {
+    .ssg-path-container {
+        .middle-line {
+            position: relative;
+            width: 5px;
+            height: 400px;
+            background: black;
+            margin: auto;
+        }
+        .ball,
+        .text-box-area {
+            position: absolute;
+        }
+        .ball {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #ff817e;
+            border: 2px solid black;
+            left: -5px;
+            &:nth-child(1) {
+                top: 0px;
+            }
+            &:nth-child(2) {
+                top: 40%;
+            }
+            &:nth-child(3) {
+                top: 70%;
+            }
+            &:nth-child(4) {
+                top: 100%;
+            }
+        }
+        .text-box-area {
+            width: 330px;
+            left: 30px;
+            .text-box {
+                background: #110909;
+                padding: 10px;
+                border-radius: 10px;
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 40px;
+                    height: 20px;
+                    clip-path: polygon(0 9%, 100% 66%, 100% 0);
+                    position: absolute;
+                    
+                    background: #110909;
+                }
+                h5 {
+                    color: $primary-color;
+                }
+                P {
+                    color: white;
+                }
+            }
+
+            &.col-a{
+                
+                &::before{
+                    left: -30px;
+                    top: 0px;
+                }
+            }
+            &.col-b{
+                left:-380px;
+                top:100px;
+                &::before {
+                    right:0px;
+                }
+            }
+            &.col-c{
+               top:60%;
+            }
+            &.col-d{
+               bottom:-21px;
+               left:-400px;
+            }
+
+        }
+    }
+}
+
+/* services section start from here */
+#services-section{
+
+
+    .image-site{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 340px);
+        gap: 20px;;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+}
+
+/* footer area */
+footer{
+    .text-pristina{
+        background:#C7B299;
+        border-top:1px solid black;
+        border-bottom: 1px solid black;
+        h1{
+            margin: 0;
+            padding:10px 0px;
+        }
+
+    }
+    .footer-item{
+        ul{
+            display: flex;
+            justify-content: center;
+            background:#CBBEB8;
+            margin-bottom: 0px;
+            li{
+                list-style: none;
+                padding:5px;
+                a{
+                    text-decoration:none;
+                    display: inline-block;
+                    padding:5px 20px;
+                    color:#110909;
+                    border-right: 1px solid black;
+                }
+            }
+        }
+    }
+}

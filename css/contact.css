@@ -55,14 +55,12 @@ section {
   }
   
 
-
-
 #contaaact {
     height: 313px;
     width: 100%;
     overflow: hidden;
 
-    background-image: url(ContactSection-BG.png);
+    background-image: url(../images/ContactSection-BG.png);
     background-repeat: no-repeat;
     padding: 0;
   }
